@@ -1,0 +1,92 @@
+.login{
+    height: 100vh;
+    background-color: #c6e1f5;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.login-signup{
+    
+    align-self: center;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+.logindesc>p{
+    font-size: 30px;
+    margin-top: 50px;
+    
+   
+}
+.logincard{
+    margin: 50px;
+      
+    
+}
+.logincard1{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px ;
+}
+.emaillogin{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    text-align: left;
+    color: #9195a0;
+    margin-top: 10px;
+}
+.googlebtn{
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #9195a0;
+    font-size: 20px;
+    color: #9195a0;
+    align-items: center;
+    margin-bottom: 10px;
+    
+
+}
+.input{
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #9195a0;
+    
+}
+.googleicon{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+.loginbtn{
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #9195a0;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    background-color: #5098e9;
+    margin-top: 10px;
+    cursor: pointer;
+    
+
+}
+.signlink{
+    font-weight:600;
+    text-decoration-color: #5098e9;
+    color: #5098e9;
+    cursor: pointer;
+
+}
+.signlink:hover{
+    background-color: #c6e1f5;
+    border-radius: 30px;
+}
