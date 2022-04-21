@@ -1,9 +1,11 @@
 import React,{useEffect, useState} from 'react'
 import './Login.css'
 import google from '../assets/images/google.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../Firebase.js'
+import { useUserAuth } from '../context/UserAuthContext'
+import { Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
 
 
 
@@ -12,35 +14,54 @@ const Login = () => {
   
   const[loginEmail,setLoginEmail]=useState("")
   const[loginPass,setLoginPass]=useState("")
+  const {logIn,googleSignIn} = useUserAuth();
+  const[showpass,setShowPass]=useState(false);
+
   
-  const login= async()=>{
-    const user=await signInWithEmailAndPassword(auth,loginEmail,loginPass);
-
-
-  }
-  const home =() =>{
-    navigate("/home");
-  };
-  const handleSubmit=(e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    login();
-    home();
-  }
-
-
-
+    try {
+      await logIn(loginEmail, loginPass);
+      navigate("/");
+    } catch (err) {
+    }
+  };
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      await googleSignIn();
+      navigate("/");
+    } catch (error) {
+    
+    }
+  };
 
   let navigate=useNavigate();
   const signup =() =>{
     navigate("/signup");
   };
+  const jobs =() =>{
+    navigate("/jobs");
+  };
   
   return (
     <div className='login'>
       <div className='logindesc'>
-          <p>Make the Most of Your Professional Life</p>
+        <p>Make the Most of Your Professional Life</p>
+        <button onClick={jobs}  className='findjob'> Jobs </button>
+        <button onClick={signup} className='findjob'> Get A Free  Account </button>
+        <div className='followsocials'>
+          <h3>Find Us :</h3>
+          <div className='socials'>
+            <Facebook className='fb'/>
+            <Twitter className='tw'/>
+            <LinkedIn className='ln'/>
+            <Instagram className='insta'/>
 
+          </div>
         </div>
+
+      </div>
        <div className='login-signup'>
         <div className='logincard'>
           <p>Login To Your Account</p>
@@ -56,23 +77,29 @@ const Login = () => {
             }}
              />
             <label className='label' >Password</label>
-            <input
+            <input 
              className='input'
-             type='password' 
+             type={showpass?'text':'password'}
              required id='Password'
              name='password'
              onChange={(e)=>{
               setLoginPass(e.target.value);
             }}
               />
+           <div className='passwordarea'>
+           <div className='showpass'><input type='checkbox' checked={showpass} onChange={(e)=>{setShowPass(e.target.checked)}}/>
+           <p>Show Password</p></div>
+           <p className='forgotpass' >Forgot Password?</p>
+           </div> 
+
             <button className='loginbtn' type='submit'>Login</button>
           </form>
         </div>
         <p className='or'>or</p>
         <div className='logincard1'>
-          <button className='googlebtn'><img  className='googleicon' src={google}/>Login with Google</button>
+          <button onClick={handleGoogleSignIn} className='googlebtn'><img  className='googleicon' src={google} alt=''/>Login with Google</button>
         </div>
-       <p>New to Myhr? <span onClick={signup} className='signlink'>SignUp</span></p>
+       <p>New to Connection.254? <span onClick={signup} className='signlink'>SignUp</span></p>
         </div>
        </div>
 

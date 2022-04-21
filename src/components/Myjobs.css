@@ -1,0 +1,32 @@
+.applicationbtn{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px #5098e9 solid;;
+    font-size: 18px;
+    color: #5098e9;
+    align-items: center;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   margin-bottom: 5px;
+   margin-right: 10px;
+    
+
+}
+.applicationbtn:hover{
+    background-color: white;
+}
+.deletejob{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9195a0;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 15px;
+
+}
+.deletejob:hover{
+    color: #5098e9;
+}

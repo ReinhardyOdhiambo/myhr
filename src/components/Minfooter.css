@@ -1,0 +1,28 @@
+.minifooter{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-right: 50px;
+}
+.minfooterlink{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+   
+}
+.minfooterlinks{
+    color:  #9195a0;
+    margin-bottom: -30px;
+}
+.minilogo>h3{
+    color:#2c3246 ;
+}
+.minilogospan{
+    color: #5098e9;
+}
+.minfooterlinks:hover{
+    color: #5098e9;
+}

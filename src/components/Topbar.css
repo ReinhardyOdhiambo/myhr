@@ -1,0 +1,94 @@
+.nav{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 650px;
+    
+    
+}
+.logoname{
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+.logolink{
+    text-decoration: none;
+    color: #2c3246;
+}
+.logo254{
+    color: #5098e9;
+}
+
+.menuitems{
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.navitems{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}  
+.navitems:hover{
+    text-decoration: underline;
+    text-decoration-color: #5098e9;
+    text-decoration-thickness: 5px;
+}
+.logoutbtn{
+    background-color: #5098e9;
+    font-size: 18px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+}
+.profileicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    overflow: hidden;
+    background-image: url('../assets/images/user-solid.svg');
+    background-position: center;
+    background-color: #5098e9;
+    border: none;
+    outline: none;
+    
+}
+.loginbttn{
+    font-size: 18px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: 1px #5098e9 solid;
+    margin-bottom: 5px;
+    color: #5098e9;
+    background-color: white;
+    height: 40px;
+}
+.loginbttn:hover{
+    border: 2.5px #5098e9 solid;
+}
+.joinbttn{
+    font-size: 18px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 5px;
+    color: #9195a0;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.joinbttn:hover{
+    color: #2c3246;
+    background-color: #9195a0;
+}

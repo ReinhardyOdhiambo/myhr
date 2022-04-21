@@ -1,39 +1,34 @@
 import React, { useState } from 'react'
-import {createUserWithEmailAndPassword,onAuthStateChanged,signOut} from 'firebase/auth'
-import { auth } from '../Firebase.js'
-import { async } from '@firebase/util'
-import { useNavigate } from 'react-router-dom'
+import './Homepage.css'
+import { useNavigate,useParams } from 'react-router-dom'
+import { useUserAuth } from '../context/UserAuthContext.js'
+import Jobs from '../components/Jobs.js'
+import Applyform from '../components/Applyform.js';
+import Createjob from '../components/Createjob.js';
+import Jobdetails from '../components/Jobdetails.js';
+import Sidenav from '../components/Sidenav'
+import Recomendedjobs from '../components/Recomendedjobs'
 
 const Homepage = () => {
+ 
 
-    const[user,setUser]=useState({});
-    onAuthStateChanged(auth ,(currentUser)=>{
-        setUser(currentUser);
-    });
-    const logout= async()=>{
-        await signOut(auth);
-
-    }
-    let navigate=useNavigate();
-    const home =() =>{
-        navigate("/");
-      };
-    const signout=()=>{
-        logout();
-        home();
-
-
-    }
-
-    
+  
   return (
-    <div>Homepage
-        <p>{user?.email}</p>
-        <button onClick={signout}>Logout</button>
+    <div className='homepage'>
+      <Jobs/>
+      <Sidenav/>
+      
+    
     </div>
-    
-    
-  )
-}
+  );
+};
 
 export default Homepage
+
+/*<div className="">
+        Hello Welcome <br />
+        {user && user.email}
+      </div>
+      <div>
+        <button  onClick={handleLogout}> LogOut</button>
+      </div>*/

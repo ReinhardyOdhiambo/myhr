@@ -1,0 +1,54 @@
+.recomended{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    border: 1px #9195a0 solid;
+    border-radius: 10px;
+    padding: 10px;  
+    height: 220px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.recomendedjobs{
+    margin-top: -9px;
+}
+
+.recomendedjobcard{
+    margin-bottom:-50px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+
+
+}
+.logotitle{
+    display: flex;
+    gap: 5px;
+}
+.recomendedicon{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    background-image: url('../assets/images/building-solid.svg');
+    background-position: top;
+    background: cover;
+
+}
+.recomendedtitle{
+    font-size: 17px;
+    color: #5098e9;
+}
+.recomendeddetails{
+    margin-top: -8px;
+    display: flex;
+    gap: 3px;
+}
+.recomendeddetails>h3{
+    font-size: 15px;
+    color: #2c3246;
+}

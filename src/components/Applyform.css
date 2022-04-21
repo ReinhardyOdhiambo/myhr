@@ -1,0 +1,97 @@
+.applyjobform{
+    border: #9195a0 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.formarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.formtitle>h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline #5098e9 2px;
+    margin-left: -150px;
+}
+.applyform{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    padding: 20px;
+}
+.applylabel,.applyforminput,.applylabelfile{
+    align-self: start;
+
+}
+.applylabel{
+    color: #9195a0;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.applyforminput{
+    width: 80%;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #9195a0;
+    
+}
+.applyforminputfile{
+    margin-top: 10px;
+    align-self: flex-start;
+  
+}
+.applylabelfile{
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background-color: #5098e9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+.applybtn{
+    width: 80%;
+    height: 40px;
+    background-color: #5098e9;
+    border-radius: 25px;
+    border: 1px #9195a0 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: antiquewhite;
+    margin-top: 10px;
+    align-self: start;
+    font-size: 18px;
+
+}
+.viewcv{
+    height: 500px;
+    width: 500px;
+}
+.pdfformat{
+    align-self: start;
+    color: red;
+}
+.outerbar{
+    height: 3px;
+    color: #5098e9;
+}
+.applicationsent{
+    margin-top: 25px;
+}
+.sent{
+    filter: invert(56%) sepia(25%) saturate(2052%) hue-rotate(187deg) brightness(96%) contrast(90%);
+}

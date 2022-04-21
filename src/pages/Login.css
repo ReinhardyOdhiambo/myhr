@@ -2,27 +2,76 @@
     height: 100vh;
     background-color: #c6e1f5;
     display: flex;
-    flex-direction: column;
+    background-image: url('../assets/images/backimg.jpg');
+    background-position:top ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     
     
 }
 .login-signup{
-    
-    align-self: center;
+    margin-top: 50px;
     width: 400px;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 500px;
+   
+    
  
+}
+.logindesc{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+
+}
+.followsocials{
+margin-left: 100px;
+margin-top: 100px;
+}
+.socials{
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
 }
 .logindesc>p{
     font-size: 30px;
     margin-top: 50px;
+    text-align: start;
+    max-width: 50%;
+    font-weight:200 ;
+    font-size: 40px;
+    
     
    
 }
+.fb{
+    color: blue;
+}
+
+.ln{
+    color: blue;
+}
+.findjob{
+    width: 50%;
+    background-color: white;
+    height: 50px; 
+    align-self: flex-start;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.findjob:hover{
+    border: #5098e9 3px solid;
+}
 .logincard{
     margin: 50px;
+    
       
     
 }
@@ -89,4 +138,25 @@
 .signlink:hover{
     background-color: #c6e1f5;
     border-radius: 30px;
+}
+.showpass{
+    align-self: flex-start;
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+}   
+.forgotpass{
+    color: #9195a0;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.forgotpass:hover{
+    color: #5098e9;
+}
+.passwordarea{
+    display: flex;
+    justify-content: space-between;
+    
 }
