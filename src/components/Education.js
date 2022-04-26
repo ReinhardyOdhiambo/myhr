@@ -7,6 +7,11 @@ import "./Education.css";
 
 const Education = ({ setNewEducation }) => {
   const { user } = useUserAuth();
+  const close = (e) => {
+    if (e.target.classList.contains("educationform")) {
+      setNewEducation(null);
+    }
+  };
   const [institution, setInstitution] = useState();
   const [achievement, setAchievement] = useState();
   const [location, setLocation] = useState();
@@ -25,14 +30,12 @@ const Education = ({ setNewEducation }) => {
       name: user.email,
       userid: user.uid,
     });
+    setNewEducation(null);
+
     navigate("/profile");
   };
 
-  const close = (e) => {
-    if (e.target.classList.contains("educationform")) {
-      setNewEducation(null);
-    }
-  };
+ 
 
   return (
     <div className="educationform" onClick={close}>
