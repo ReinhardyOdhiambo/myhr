@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs, setDoc } from "firebase/firestore";
+import { doc,  setDoc } from "firebase/firestore";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
