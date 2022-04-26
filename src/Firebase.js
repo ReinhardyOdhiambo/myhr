@@ -7,7 +7,7 @@ const firebaseConfig = {
 
     apiKey: "AIzaSyBdEDop3fxiT1WTsxaCwoconZ-R6MmonhM",
   
-    authDomain: "hr-project-ae711.firebaseapp.com",
+    authDomain: "https://connection254.netlify.app",
   
     databaseURL: "https://hr-project-ae711-default-rtdb.firebaseio.com",
   
