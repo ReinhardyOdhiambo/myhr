@@ -1,3 +1,6 @@
+
+
+
 .profile{
     display: flex;
     flex-direction: column;
@@ -99,6 +102,7 @@
 .experiencedetails,.educationdetails,.skilllist{
     text-align: start;
     margin-left: 50px;
+    position: relative;
 }
 .experiencecompany{
     font-weight: 300;
@@ -142,11 +146,25 @@
     color: #9195a0;
 }
 .editicon{
+    position: relative;
     top: 0;
     right: 0;
     position: absolute;
     margin-right: 20px;
     margin-top: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.editicon:hover{
+    background-color: #5098e9;
+}
+.editicon1{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -12px;
 }
 .profileediticon{
     position: absolute;
@@ -173,4 +191,39 @@
     
     
 
+}
+.expdelete{
+position: absolute;
+right: 0;
+top: 0;
+margin-right: 30px;
+margin-top: 20px;
+cursor: pointer;
+}
+.skilldelete:hover{
+    color: #5098e9;
+}
+.expdelete:hover{
+    color: #5098e9;
+
+}
+.edudelete:hover{
+    color: #5098e9;
+
+}
+.edudelete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -350px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.skilldelete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: -150px;
+    cursor: pointer;
 }

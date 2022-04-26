@@ -23,9 +23,11 @@ const Createjob = () => {
   const [responsibility, setResponsibility] = useState();
   const [qualification, setQualifications] = useState();
   const [externalAddress, setExternalAddress] = useState("");
-  
 
-  const date = firebase.firestore.Timestamp.now().toDate().toString().slice(4, 15);
+  const date = firebase.firestore.Timestamp.now()
+    .toDate()
+    .toString()
+    .slice(4, 15);
   console.log(date);
 
   let navigate = useNavigate();
@@ -46,11 +48,8 @@ const Createjob = () => {
       date,
       sendEmail,
       creator: { name: user.email, id: user.uid },
-      
     });
     navigate("/");
-
-    
   };
 
   return (
@@ -103,8 +102,6 @@ const Createjob = () => {
                 setLocation(e.target.value);
               }}
             />
-
-            
 
             <label className="applylabel">Workplace Type </label>
             <select
@@ -170,7 +167,6 @@ const Createjob = () => {
                 setQualifications(e.target.value);
               }}
             />
-            
 
             <div className="applicantstyle">
               <h3>How Would You like to receive your applicants</h3>

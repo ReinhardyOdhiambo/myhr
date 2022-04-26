@@ -1,0 +1,55 @@
+.experienceform{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0,0,0.5);
+}
+.experienceformtab{
+    background-color:white;
+    margin: 40px auto;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+}
+.expform{
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+    align-items: flex-start;
+    width: 80%;
+}
+.expsubtitle{
+    color: #9195a0;
+    font-size: 16px;
+}
+.expinputs{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: #9195a0 1px solid;
+
+}
+.exptext{
+    width: 700px;
+    max-height: 200px;
+    max-width: 700px;
+
+}
+.expbutton{
+    background-color: #5098e9;
+    width: 150px;
+    height: 40px;
+    border: #9195a0 1px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}

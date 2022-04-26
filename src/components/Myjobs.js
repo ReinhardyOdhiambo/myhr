@@ -13,6 +13,7 @@ import { useUserAuth } from "../context/UserAuthContext";
 import Sidenav from "./Sidenav";
 import { async } from "@firebase/util";
 import Recomendedjobs from "./Recomendedjobs";
+import Minfooter from "./Minfooter";
 
 const Myjobs = () => {
   const{user} = useUserAuth();
@@ -47,6 +48,7 @@ const Myjobs = () => {
     <div className="jobarea">
       <Sidenav/>
       <Recomendedjobs deletejob={deleteJob}/>
+      <Minfooter/>
       
       
       

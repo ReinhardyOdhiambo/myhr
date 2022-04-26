@@ -213,7 +213,7 @@ function Applyform() {
 
 
   
-  console.log(cvUrl);
+  
 
   return (
     <div className="applicationarea">

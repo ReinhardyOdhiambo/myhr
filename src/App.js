@@ -17,6 +17,7 @@ import Applications from './components/Applications';
 import Topbar from './components/Topbar';
 import Profile from './components/Profile';
 import Createjob from './components/Createjob';
+import Resetpass from './pages/Resetpass';
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/' element={<ProtectedRoutes><Homepage/></ProtectedRoutes>}/>
       <Route path='/jobs' element={<Jobs/>}/>
+      <Route path='/resetpassword' element={<Resetpass/>}/>
       <Route path='/profile' element={<ProtectedRoutes><Profile/></ProtectedRoutes>}/>
       <Route path='/createjob' element={<ProtectedRoutes><Createjob/></ProtectedRoutes>}/>
       <Route path='/details/:id' element={<ProtectedRoutes><Jobdetails/></ProtectedRoutes>}/>
