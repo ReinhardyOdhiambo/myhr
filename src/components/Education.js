@@ -32,7 +32,7 @@ const Education = ({ setNewEducation }) => {
     });
     setNewEducation(null);
 
-    navigate("/profile");
+    navigate("/");
   };
 
  

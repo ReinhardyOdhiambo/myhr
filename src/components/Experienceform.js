@@ -32,7 +32,7 @@ const Experienceform = ({ setNewExperience }) => {
       user: user.email,
       userid: user.uid ,
     });
-    navigate("/profile");
+    navigate("/");
   };
   
 
