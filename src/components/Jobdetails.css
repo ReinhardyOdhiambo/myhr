@@ -68,91 +68,6 @@
 .applybttn:hover{
     border: 3px #9195a0 solid;
 }
-@media only screen and (max-width:320px){
-    .details{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 20px;
-     }
-        
-     .detailscover{
-         border: 1px #9195a0 solid;    
-         padding: 20px;
-         border-radius: 10px;
-         width: 80%;
-     }
-     
-     
-     .topdetails{
-         display: flex;
-         gap: 10px;
-         align-items: center;
-     
-     }
-     
-     .companydetails {
-         text-align: start;
-         display: flex;
-         flex-direction: column;
-         align-items: flex-start;
-        
-     }
-     .dcompanytitle,.dlocation,.djoblevel,.djobtime,.djobdate{
-         font-size: 15px;
-         text-align: start;
-         margin-bottom:-8px ;
-     }
-     
-     .descresqua{
-         max-width: 600px;
-         display: flex;
-         flex-direction: column;
-         align-items: flex-start;
-         text-align: start;
-         padding: 20px;
-         
-           
-         
-     }
-     .jobdesc>h3,.jobresp>h3,.jobqua>h3{
-         text-align: start;
-         font-size: 15px;
-     }
-     .jobdesc>p,.jobresp>p,.jobqua>p{
-         font-size: 16px;
-         width:250px;
-     }
-     .applybttn,.savebttn{
-         width: 200px;
-         height: 30px;
-         background-color: #5098e9;
-         border-radius: 25px;
-         border: 1px #9195a0 solid;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         cursor: pointer;
-         color: antiquewhite;
-         font-size: 16px;
-     }
-     .savebttn{
-         background-color: white;
-         color: #5098e9;
-     }
-     .applysave{
-         display: flex;
-         flex-direction: column;
-         gap: -8px;
-         margin-top: 10px;
-         margin-left: 40px;
-     }
-     .applybttn:hover{
-         border: 3px #9195a0 solid;
-     }
-
-}
 
 @media only screen and (max-width:480px){
     .details{
@@ -222,6 +137,91 @@
          cursor: pointer;
          color: antiquewhite;
          font-size: 18px;
+     }
+     .savebttn{
+         background-color: white;
+         color: #5098e9;
+     }
+     .applysave{
+         display: flex;
+         flex-direction: column;
+         gap: -8px;
+         margin-top: 10px;
+         margin-left: 40px;
+     }
+     .applybttn:hover{
+         border: 3px #9195a0 solid;
+     }
+
+}
+@media only screen and (max-width:320px){
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+     }
+        
+     .detailscover{
+         border: 1px #9195a0 solid;    
+         padding: 20px;
+         border-radius: 10px;
+         width: 80%;
+     }
+     
+     
+     .topdetails{
+         display: flex;
+         gap: 10px;
+         align-items: center;
+     
+     }
+     
+     .companydetails {
+         text-align: start;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+        
+     }
+     .dcompanytitle,.dlocation,.djoblevel,.djobtime,.djobdate{
+         font-size: 15px;
+         text-align: start;
+         margin-bottom:-8px ;
+     }
+     
+     .descresqua{
+         max-width: 600px;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         text-align: start;
+         padding: 20px;
+         
+           
+         
+     }
+     .jobdesc>h3,.jobresp>h3,.jobqua>h3{
+         text-align: start;
+         font-size: 15px;
+     }
+     .jobdesc>p,.jobresp>p,.jobqua>p{
+         font-size: 16px;
+         width:250px;
+     }
+     .applybttn,.savebttn{
+         width: 200px;
+         height: 30px;
+         background-color: #5098e9;
+         border-radius: 25px;
+         border: 1px #9195a0 solid;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         color: antiquewhite;
+         font-size: 16px;
      }
      .savebttn{
          background-color: white;
