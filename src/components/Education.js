@@ -40,7 +40,7 @@ const Education = ({ setNewEducation }) => {
   return (
     <div className="educationform" onClick={close}>
       <div className="educationformtab">
-        <form className="edcform" onSubmit={createeducation}>
+        <form className="edcaform" onSubmit={createeducation}>
           <label className="expsubtitle" for="expjobtitle">
             {" "}
             Institution Name{" "}

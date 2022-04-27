@@ -42,7 +42,7 @@ const Skills = ({ setNewSkill }) => {
     
     
   };
-  console.log(createSkills);
+  
   
   return (
     <div className="skillformarea" onClick={close}>

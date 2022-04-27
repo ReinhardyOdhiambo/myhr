@@ -45,3 +45,104 @@
 .lbttn:hover{
     border: 2.5px #5098e9 solid;
 }
+@media only screen and (max-width:320px){
+    .sidecard{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+        display: none;
+       
+        
+    }
+    
+    .sidecard>h3{
+        font-weight: 600;
+        font-size: 20px;
+    
+    }
+    .sidecard>p{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    .sbttn{
+        font-size: 16px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 3px;
+        color:#2c3246;
+        height: 30px;
+        border: none;
+        background-color:#5098e9;
+    }
+    .lbttn{
+        font-size: 16px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: 1px #5098e9 solid;
+        margin-bottom: 5px;
+        color: #5098e9;
+        background-color: white;
+        height: 30px;
+    }
+    .lbttn:hover{
+        border: 2.5px #5098e9 solid;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .sidecard{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+        display: none;
+       
+        
+    }
+    
+    .sidecard>h3{
+        font-weight: 600;
+        font-size: 20px;
+    
+    }
+    .sidecard>p{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    .sbttn{
+        font-size: 16px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 3px;
+        color:#2c3246;
+        height: 30px;
+        border: none;
+        background-color:#5098e9;
+    }
+    .lbttn{
+        font-size: 16px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: 1px #5098e9 solid;
+        margin-bottom: 5px;
+        color: #5098e9;
+        background-color: white;
+        height: 30px;
+    }
+    .lbttn:hover{
+        border: 2.5px #5098e9 solid;
+    }
+}

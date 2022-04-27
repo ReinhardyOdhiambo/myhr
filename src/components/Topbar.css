@@ -169,6 +169,7 @@
         color: #5098e9;
         background-color: white;
         height: 40px;
+        display: none;
     }
     .loginbttn:hover{
         border: 2.5px #5098e9 solid;
@@ -184,6 +185,7 @@
         height: 40px;
         border: none;
         background-color: white;
+        display: none;
     }
     .joinbttn:hover{
         color: #2c3246;

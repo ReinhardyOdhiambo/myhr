@@ -472,3 +472,248 @@ cursor: pointer;
 }
 
 }
+
+@media only screen and (max-width:480px){
+
+
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .profilebanner{
+        position: relative;
+        background-color: antiquewhite;
+        width: 90%;
+        height: 500px;
+        margin-top: 30px;
+        border-radius:10px;
+        overflow: hidden;
+        border: #9195a0 1px solid;
+    }
+    .bannerimg{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    
+        
+        
+    
+    }
+    .profilecircle{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 3px solid antiquewhite;
+        border-radius: 50px;
+        background-color:#5098e9;
+        background-image: url('../assets/images/user-solid.svg');
+        background-position: center;
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        margin-top:75% ;
+        margin-left: 40%;
+    }
+    .profiledetails{
+        position: absolute;
+        margin-top:90%;
+        margin-left: 20px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+    }
+    .profilename{
+        font-size: 19px;
+        margin-bottom: -10px;
+        
+    
+    }
+    .profileemail{
+        color: #5098e9;
+        font-size: 200;
+        font-size: 16px;
+        margin-right: 10px;
+        
+    }
+    .profileemaillink{
+        margin-left: -20px;
+    
+    }
+    .profiletitle{
+        font-weight:300 ;
+        font-size: 18px;
+    
+    }
+    .profilephone{
+        color: black;
+        font-size: 16px;
+    }
+    .profilelocation{
+        color: #9195a0;
+        font-size: 16px;
+    }
+    .experience,.skills,.education{
+        position: relative;
+        width: 75%;
+        height: 100%;
+        background-color: antiquewhite;
+        border: #9195a0 1px solid;
+        border-radius: 10px;
+        overflow: auto;
+        align-self: flex-start;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .experience>h3,.skills>h3,.education>h3{
+        font-size: 20px;
+        text-decoration: underline #5098e9 2px;
+    
+    
+    
+    }
+    .experiencedetails,.educationdetails,.skilllist{
+        text-align: start;
+        margin-left: 25px;
+        position: relative;
+    }
+    .experiencecompany{
+        font-weight: 300;
+        margin-top: -8px;
+        margin-bottom: -8px;
+        font-size: 16px;
+    }
+    .experiencedate,.experiencelocation{
+        color: #9195a0;
+        font-weight: 400;
+        font-size: 16px;
+        
+    }
+    .experiencelocation{
+        margin-top: -10px;
+    }
+    .experiencework{
+        font-weight: 300;
+        font-family: Georgia;
+        font-size: 16px;
+    }
+    .skilllist{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 8px;
+    }
+    .proffskils{
+        width: 100%;
+        background-color: #5098e9;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .achievment{
+        font-weight: 300;
+        margin: -10px 0px;
+        font-size: 16px;
+        
+    }
+    .institutionname{
+        font-size: 18px;
+    }
+    .eduperiod{
+        color: #9195a0;
+        font-size: 16px;
+    }
+    .editicon{
+        position: relative;
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin-right: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        
+    }
+    .editicon:hover{
+        background-color: #5098e9;
+    }
+    .editicon1{
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -12px;
+    }
+    .profileediticon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .pcreatejobbtn{
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 15px;
+        border-radius: 40px;
+        border: 1px #5098e9 solid;;
+        font-size: 18px;
+        color: #5098e9;
+        align-items: center;
+        gap: 5px;
+        display: flex;
+        bottom: 0;
+        right: 0;
+        margin-right:20px ;
+        display: none;
+        
+        
+    
+    }
+    .expdelete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+    .skilldelete:hover{
+        color: #5098e9;
+    }
+    .expdelete:hover{
+        color: #5098e9;
+    
+    }
+    .edudelete:hover{
+        color: #5098e9;
+    
+    }
+    .edudelete{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right:-10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .skilldelete{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -10px;
+        margin-right: -10px;
+        cursor: pointer;
+    }
+    
+    }

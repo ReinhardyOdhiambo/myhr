@@ -35,3 +35,45 @@
     border: #9195a0 1px solid;
     height: 30px;
 }
+@media only screen and (max-width:320px) {
+    .skillformarea{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:rgb(0, 0,0,0.5);
+    
+    
+    }
+    .skillformtab{
+        background-color:white;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: center;
+    
+    }
+    .skillformtab>h3{
+        text-decoration: underline;
+        text-decoration-color: #5098e9;
+    }
+    .skillform{
+        margin: 30px auto;
+        display: flex;
+       flex-direction: column;
+        gap: 10px;
+        
+    
+    }
+    .skillsinput{
+        border-radius: 10px;
+        border: #9195a0 1px solid;
+        height: 30px;
+        width: 100%;
+    }
+
+    
+}
