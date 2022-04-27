@@ -36,13 +36,7 @@
 .addjobicon{
     margin-left: 30px;
 }
-@media only screen and (max-width:320px) {
-    .sidenav{
-        display: none;
-    }
-    
-}
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:320px), (max-width:480px), (max-width:600px) {
     .sidenav{
         display: none;
     }
