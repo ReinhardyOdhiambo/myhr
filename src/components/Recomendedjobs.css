@@ -52,3 +52,8 @@
     font-size: 15px;
     color: #2c3246;
 }
+@media only screen and (max-width:320px){
+    .recomended{
+        display: none;
+    }
+}

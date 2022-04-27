@@ -61,7 +61,7 @@ const Myjobs = () => {
                       }}
                       className="deletejob"
                     >
-                      <Delete />
+                      <Delete fontSize="small"/>
                     </div>
                     <Link to={`/applications/${job.id}`}>
                       <button className="applicationbtn">Applications</button>

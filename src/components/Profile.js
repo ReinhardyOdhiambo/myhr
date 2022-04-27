@@ -128,7 +128,7 @@ const Profile = () => {
               <Email fontSize="small" />
               {user.email}{" "}
             </a>
-            <a href="tel:+254743713416" className="profilephone">
+            <a  href="tel:+254743713416" className="profilephone">
               <Phone fontSize="small" /> {users.userid===user.uid &&users.tel}
             </a>
             <h3 className="profilelocation">
@@ -164,7 +164,7 @@ const Profile = () => {
                {
                  experience.userid===user.uid &&
                  <div key={experience.id} className="experiencedetails">
-            <div  className="expdelete" onClick={()=>{deleteexp(experience.id)}}><Delete/></div>
+            <div  className="expdelete" onClick={()=>{deleteexp(experience.id)}}><Delete fontSize="small"/></div>
             <h3 className="experienceposition"> {experience.jobtitle} </h3>
             <h3 className="experiencecompany">
               {experience.company}
@@ -188,13 +188,13 @@ const Profile = () => {
         <div className="skills">
           <h3> Skills</h3>
           <div className="editicon" onClick={setNewSkill}>
-            <Add className="editicon1" />
+            <Edit className="editicon1" />
           </div>
           {skillist.map((skill) => (
             <>
               {skill.userid === user.uid && (
                 <div key={skill.id} className="skilllist">
-                   <div  onClick={()=>{deleteskill(skill.id)}}className="skilldelete"><Delete/></div>
+                   <div  onClick={()=>{deleteskill(skill.id)}}className="skilldelete"><Delete fontSize="small"/></div>
                   <p className="proffskils"> {skill.skill1} </p>
                   <p className="proffskils">{skill.skill2}</p>
                   <p className="proffskils">{skill.skill3}</p>
@@ -215,7 +215,7 @@ const Profile = () => {
             <>
               {education.userid === user.uid && (
                 <div key={education.id} className="educationdetails">
-                   <div  onClick={()=>{deletedu(education.id)}}className="edudelete"><Delete/></div>
+                   <div  onClick={()=>{deletedu(education.id)}}className="edudelete"><Delete fontSize="small"/></div>
                   <h3 className="institutionname">{education.institution}</h3>
                   <h3 className="achievment"> {education.achievement} </h3>
                   <h3 className="eduperiod">

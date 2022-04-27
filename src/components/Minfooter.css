@@ -26,3 +26,8 @@
 .minfooterlinks:hover{
     color: #5098e9;
 }
+@media only screen and (max-width:320px){
+    .minifooter{
+        display: none;
+    }
+}

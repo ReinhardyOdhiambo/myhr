@@ -1,127 +1,209 @@
+.jobarea {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+}
 
-.jobarea{
+.joblistings {
+  height: 90vh;
+  overflow: auto;
+  padding-top: 20px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px #9195a0 solid;
+  border-radius: 10px;
+}
+.jobcarddetails {
+  margin-top: -15px;
+}
+.fulljob {
+  height: 90vh;
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 20px;
+}
+.jobcard {
+  position: relative;
+  width: 500px;
+  display: flex;
+  gap: 20px;
+  border-bottom: #9195a0 1px solid;
+  padding: 10px;
+  margin-left: 50px;
+}
+.jobcard:hover .jobcarddetails > .jobtitle {
+  text-decoration: underline;
+}
+.jobdetails {
+  margin-top: -5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+.jobdetails > h3 {
+  margin-top: -10px;
+  text-align: start;
+}
+.jobimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #5098e9;
+  background-image: url("../assets/images/building-solid.svg");
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.jobtitle {
+  color: #5098e9;
+  font-size: 20px;
+  text-align: start;
+}
+.companytitle,
+.location,
+.joblevel,
+.jobtime,
+.jobdate {
+  font-weight: 200;
+}
+.fulljobtitle {
+  align-self: start;
+  font-size: 25px;
+}
+.fulldetails {
+  display: flex;
+  align-self: start;
+  margin-top: -35px;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.fulldesc {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.positondesc > h5,
+.qualification > h5,
+.responsibility > h5 {
+  text-decoration: underline;
+}
+.positondesc > p,
+.qualification > p,
+.responsibility > p {
+  font-weight: 350;
+}
+.joblinks {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+.joblistings a {
+  text-decoration: none;
+  color: black;
+}
+.jobdate {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  .jobarea {
     position: relative;
     margin-top: 30px;
     display: flex;
-   
-}
+  }
 
-.joblistings{
+  .joblistings {
     height: 90vh;
     overflow: auto;
     padding-top: 20px;
-    width: 45%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-   margin: auto;
-   border: 1px #9195a0 solid;
-   border-radius: 10px;
-   
-}
-.jobcarddetails{
+    margin: auto;
+    border: 1px #9195a0 solid;
+    border-radius: 10px;
+  }
+  .jobcarddetails {
     margin-top: -15px;
-}
-.fulljob{
-    height: 90vh;
-    flex: 1;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    padding: 20px;
-
-    
-}
-.jobcard{
+  }
+  
+  .jobcard {
     position: relative;
-    width: 500px;
+    width: 300px;
     display: flex;
-    gap: 20px;
-    border-bottom: #9195a0 1px solid ;
-    padding: 10px;
-    margin-left: 50px;
-    
-    
-    
-}
-.jobcard:hover .jobcarddetails>.jobtitle{
+    gap: 8px;
+    border-bottom: #9195a0 1px solid;
+    padding: 5px;
+    margin-left: 3px;
+  }
+  .jobcard:hover .jobcarddetails > .jobtitle {
     text-decoration: underline;
-}
-.jobdetails{
+  }
+  .jobdetails {
     margin-top: -5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    
-    
-
-
-}
-.jobdetails>h3{
+    column-gap: 5px;
+  }
+  .jobdetails > h3 {
     margin-top: -10px;
     text-align: start;
-}
-.jobimg{
-    width:100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color:#5098e9;
-    background-image: url('../assets/images/building-solid.svg');
-    background-size:contain;
+    font-size: 14px;
+  }
+  .jobimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5098e9;
+    background-image: url("../assets/images/building-solid.svg");
+    background-size: contain;
     background-position: center;
     align-items: center;
     display: flex;
     overflow: hidden;
-
-
-
-
-}
-.jobtitle{
+  }
+  .jobtitle {
     color: #5098e9;
-    font-size: 20px;
+    font-size: 16px;
     text-align: start;
-}
-.companytitle,.location,.joblevel,.jobtime,.jobdate{
+  }
+  .companytitle,
+  .location,
+  .joblevel,
+  .jobtime,
+  .jobdate {
     font-weight: 200;
-}
-.fulljobtitle{
-    align-self: start;
-    font-size: 25px;
-
-}
-.fulldetails{
-    display: flex;
-    align-self: start;
-    margin-top: -35px;
-    gap: 10px;
-    font-size: 15px;
-   
-}
-
-.fulldesc{
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-.positondesc>h5,.qualification>h5,.responsibility>h5{
+  }
+  
+  .positondesc > h5,
+  .qualification > h5,
+  .responsibility > h5 {
     text-decoration: underline;
-}
-.positondesc>p,.qualification>p,.responsibility>p{
+  }
+  .positondesc > p,
+  .qualification > p,
+  .responsibility > p {
     font-weight: 350;
-}
-.joblinks{
+  }
+  .joblinks {
     text-decoration: none;
     text-decoration-color: none;
-}
-.joblistings a{
+  }
+  .joblistings a {
     text-decoration: none;
     color: black;
+  }
+  .jobdate {
+    font-weight: 400;
+    font-size: 10px;
+  }
 }
-.jobdate{
-    font-weight: 500;
-    font-size: 15px;
-}
-
-

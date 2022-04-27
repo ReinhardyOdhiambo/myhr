@@ -93,3 +93,11 @@
   <Link to='/createjob'>
   <button className="createjobbtn"><NoteAdd className="addjobicon"/> Post a Job</button>
 </Link>*/
+/*<div className="postjobcard">
+                <h3 className="postjobtag">Post a Job for People to See</h3>
+                <Link to="/createjob">
+                  <button className="createjobcardbtn">
+                    <NoteAdd className="addjobicon" /> Post a Job
+                  </button>
+                </Link>
+              </div>*/
