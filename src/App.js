@@ -15,6 +15,7 @@ import Topbar from './components/Topbar';
 import Profile from './components/Profile';
 import Createjob from './components/Createjob';
 import Resetpass from './pages/Resetpass';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -38,6 +39,7 @@ function App() {
       <Route path='/myjobs' element={<ProtectedRoutes><Myjobs/></ProtectedRoutes>}/>
       <Route path='/applications/:id' element={<ProtectedRoutes><Applications/></ProtectedRoutes>}/>
     </Routes>
+    <Footer/>
     </UserAuthContextProvider>
     
     
