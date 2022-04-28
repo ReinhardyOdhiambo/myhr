@@ -171,21 +171,6 @@ const Createjob = () => {
             <div className="applicantstyle">
               <h3>For External Application Add Website Url</h3>
 
-              <label className="applylabel">Receive Applicants by: </label>
-              <select
-                className="applyformselect"
-                name="workplacetype"
-                onChange={(e) => {}}
-              >
-                
-                <option
-                  onClick={() => setWebsiteAddress(!websiteaddress)}
-                  value="ExternalWebsite"
-                >
-                  External Website
-                </option>
-              </select>
-              {websiteaddress ? (
                 <div>
                   <label className="applylabel" for="urlsite">
                     {" "}
@@ -204,25 +189,7 @@ const Createjob = () => {
                     }}
                   />
                 </div>
-              
-               /* <div>
-                  <label className="applylabel" for="applyemail">
-                    {" "}
-                    Email Address{" "}
-                  </label>
-                  <input
-                    className="applyforminput"
-                    required
-                    type="email"
-                    name="applyemail"
-                    id="email"
-                    placeholder=""
-                    onChange={(e) => {
-                      setSendEmail(e.target.value);
-                    }}
-                  />
-                </div>*/
-              ):null}
+             
             </div>
 
             <button className="applybtn" type="submit">
