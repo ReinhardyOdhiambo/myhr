@@ -100,4 +100,20 @@
                     <NoteAdd className="addjobicon" /> Post a Job
                   </button>
                 </Link>
-              </div>*/
+              </div>
+              
+              @media only screen and(max-width:480px) {
+    
+}
+@media only screen and(max-width:412px) {
+    
+}
+@media only screen and(max-width:375px) {
+    
+}
+@media only screen and(max-width:320px) {
+    
+}
+              
+              
+              */

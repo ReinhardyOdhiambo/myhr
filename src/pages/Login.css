@@ -154,3 +154,168 @@ margin-top: 100px;
     justify-content: space-between;
     
 }
+@media only screen and (max-width:600px) {
+    .login{
+        display: flex;
+        flex-direction: column;
+        background-color: #c6e1f5;
+        background-image: url('../assets/images/backimg.jpg');
+        background-repeat:no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+        background-position:center;
+        
+        
+        
+    }
+    .login-signup{
+        margin: 0px auto;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: auto;
+        
+       
+       
+    }
+    .logindesc{
+        margin: -20px  auto 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+   
+    .followsocials{
+    margin-left: 100px;
+    margin-top: 100px;
+    display: none;
+    }
+    .socials{
+        display: flex;
+        gap: 25px;
+        cursor: pointer;
+        display: none;
+    }
+    .logindesc>p{
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        font-weight:200 ;
+          
+    }
+    
+    .findjob{
+        width: 50%;
+        background-color: white;
+        height: 50px; 
+        align-self: flex-start;
+        border-radius: 50px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .findjob:hover{
+        border: #5098e9 3px solid;
+    }
+    .logincard{
+        margin: 50px;
+        
+          
+        
+    }
+    .logincard1{
+    
+        display: flex;
+        flex-direction: column;
+        margin-bottom:10px ;
+    }
+    .emaillogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .label{
+        text-align: left;
+        color: #9195a0;
+        margin-top: 10px;
+    }
+    .googlebtn{
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid #9195a0;
+        font-size: 20px;
+        color: #9195a0;
+        align-items: center;
+        margin-bottom: 10px;
+        
+    
+    }
+    .input{
+        outline: none;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #9195a0;
+        width: 100%;
+        
+    }
+    .googleicon{
+        width: 25px;
+        height: 25px;
+        align-self: center;
+        margin-bottom: -5px;
+        margin-right: 5px;
+    }
+    .loginbtn{
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid #9195a0;
+        font-size: 20px;
+        color: white;
+        align-items: center;
+        background-color: #5098e9;
+        margin-top: 10px;
+        cursor: pointer;
+        
+    
+    }
+    .signlink{
+        font-weight:600;
+        text-decoration-color: #5098e9;
+        color: #5098e9;
+        cursor: pointer;
+    
+    }
+    .signlink:hover{
+        background-color: #c6e1f5;
+        border-radius: 30px;
+    }
+    .showpass{
+        align-self: flex-start;
+        display: flex;
+        font-size: 15px;
+        font-weight: 100;
+    }   
+    .forgotpass{
+        color: #9195a0;
+        text-decoration: underline;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    .forgotpass:hover{
+        color: #5098e9;
+    }
+    .passwordarea{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+}
