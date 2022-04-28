@@ -19,7 +19,7 @@ const Createjob = () => {
   const [workplacetype, setWorkplace] = useState();
   const [employmenttype, setEmployment] = useState();
   const [jobdescription, setDescription] = useState();
-  const [sendEmail, setSendEmail] = useState();
+  //const [sendEmail, setSendEmail] = useState();
   const [responsibility, setResponsibility] = useState();
   const [qualification, setQualifications] = useState();
   const [externalAddress, setExternalAddress] = useState("");
@@ -46,7 +46,7 @@ const Createjob = () => {
       externalAddress,
       qualification,
       date,
-      sendEmail,
+     // sendEmail,
       creator: { name: user.email, id: user.uid },
     });
     navigate("/");
@@ -169,7 +169,7 @@ const Createjob = () => {
             />
 
             <div className="applicantstyle">
-              <h3>How Would You like to receive your applicants</h3>
+              <h3>For External Application Add Website Url</h3>
 
               <label className="applylabel">Receive Applicants by: </label>
               <select
@@ -177,12 +177,7 @@ const Createjob = () => {
                 name="workplacetype"
                 onChange={(e) => {}}
               >
-                <option
-                  onClick={() => setWebsiteAddress(!websiteaddress)}
-                  value="Email"
-                >
-                  Email
-                </option>
+                
                 <option
                   onClick={() => setWebsiteAddress(!websiteaddress)}
                   value="ExternalWebsite"
@@ -209,8 +204,8 @@ const Createjob = () => {
                     }}
                   />
                 </div>
-              ) : (
-                <div>
+              
+               /* <div>
                   <label className="applylabel" for="applyemail">
                     {" "}
                     Email Address{" "}
@@ -226,8 +221,8 @@ const Createjob = () => {
                       setSendEmail(e.target.value);
                     }}
                   />
-                </div>
-              )}
+                </div>*/
+              ):null}
             </div>
 
             <button className="applybtn" type="submit">
