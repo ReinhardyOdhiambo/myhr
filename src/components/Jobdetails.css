@@ -146,9 +146,9 @@
          display: flex;
          flex-direction: column;
          gap: -8px;
-         margin-top: 10px;
-         margin-left: 40px;
+         margin: 10px auto;
      }
+         
      .applybttn:hover{
          border: 3px #9195a0 solid;
      }
@@ -231,9 +231,9 @@
          display: flex;
          flex-direction: column;
          gap: -8px;
-         margin-top: 10px;
-         margin-left: 40px;
+         margin: 10px auto;
      }
+         
      .applybttn:hover{
          border: 3px #9195a0 solid;
      }

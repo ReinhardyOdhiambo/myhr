@@ -123,6 +123,70 @@
     }
 
 }
+@media only screen and (max-width:412px){
+    .applicationbtn{
+        width: auto;
+        height: 30px;
+        border-radius: 20px;
+        border: 1px #5098e9 solid;;
+        font-size: 15px;
+        color: #5098e9;
+        align-items: center;
+       position: absolute;
+       bottom: 0px;
+       right: 0px;
+       margin-bottom: 5px;
+       margin-right: 70px;
+        
+    
+    }
+    .applicationbtn:hover{
+        background-color: white;
+    }
+    .deletejob{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #9195a0;
+        cursor: pointer;
+        margin-right: 70px;
+        margin-top: 5px;
+        font-size: 10px;
+    
+    }
+    .deletejob:hover{
+        color: #5098e9;
+    }
+    .createjobcardbtn{
+        width: 170px;
+        height: 40px;
+        border-radius: 40px;
+        border: 1px #5098e9 solid;;
+        font-size: 16px;
+        color: #5098e9;
+        align-items: center;
+        gap: 5px;
+        display: flex;
+        margin: 0px auto;
+        cursor: pointer;
+        
+        
+    
+    }
+    .createjobcardbtn:hover{
+        border: 2px #5098e9 solid;
+        background-color: white;
+    }
+    .addjobcardicon{
+        margin-left: 30px;
+    }
+    .postjobtag{
+        font-size: 25px;
+        font-weight: 300;
+    
+    }
+
+}
 @media only screen and (max-width:320px){
     .applicationbtn{
         width: auto;

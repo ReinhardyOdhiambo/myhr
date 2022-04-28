@@ -2,6 +2,7 @@ import React from 'react'
 import  './Topbar.css'
 import { useNavigate, Link } from 'react-router-dom';
 import { useUserAuth } from '../context/UserAuthContext';
+import { AddBox, Bookmark, CorporateFare, Save, SaveAlt, Work, WorkHistory } from '@mui/icons-material';
 
 const Topbar = () => {
   const { logOut, user } = useUserAuth();
@@ -31,7 +32,14 @@ const Topbar = () => {
             <Link to='/' className='navitems'>Home</Link>
             <Link to='/myjobs' className='navitems'> My Jobs</Link>
             <Link to='/' className='navitems'>Saved</Link>
-             <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt=''/></Link> 
+            <div className='responsiveicons'>
+              <Link to='/jobs'><Work fontSize='small' className='responsiveicon'/> </Link>
+              <Link to='/myjobs'><CorporateFare fontSize='small' className='responsiveicon'/></Link>
+              <Link to='/createjob'><AddBox fontSize='small'  className='responsiveicon'/></Link>
+              <Link to='/'><Bookmark fontSize='small'  className='responsiveicon'/></Link>
+            </div>
+            <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt=''/></Link> 
+            
 
             <button onClick={handleLogout} className='logoutbtn'>Logout</button>
             </div>:

@@ -92,14 +92,19 @@
     color: #2c3246;
     background-color: #9195a0;
 }
-@media only screen and (max-width:320px){
+.responsiveicons{
+    display: none;
+    
+}
+
+@media only screen and (max-width:600px){
     .nav{
         height: 60px;
         width: 100%;
         background-color: white;
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 200px;
         
         
     }
@@ -147,6 +152,7 @@
     
     }
     .profileicon{
+        position: absolute;
         width: 25px;
         height: 25px;
         border-radius: 50%;
@@ -156,6 +162,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
+        right: 0;
+        top: 0;
+        margin: 20px 5px;
         
     }
     .loginbttn{
@@ -190,6 +199,22 @@
     .joinbttn:hover{
         color: #2c3246;
         background-color: #9195a0;
+    }
+
+    .responsiveicons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #2c3246;
+        top: 0;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 20px;
+        
+    }
+    .responsiveicon{
+        color: #2c3246;
     }
     
 }
@@ -292,23 +317,38 @@
         color: #2c3246;
         background-color: #9195a0;
     }
+
+    .responsiveicons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #2c3246;
+        top: 0;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 20px;
+        
+    }
+    .responsiveicon{
+        color: #2c3246;
+    }
     
 }
 
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:412px){
     .nav{
+        position: relative;
         height: 60px;
         width: 100%;
         background-color: white;
         display: flex;
         align-items: center;
-        gap: 200px;
         
         
     }
     .logoname{
-        font-size: 18px;
+        font-size: 17px;
         margin-left: 10px;
     
     }
@@ -351,8 +391,9 @@
     
     }
     .profileicon{
-        width: 25px;
-        height: 25px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         overflow: hidden;
         background-image: url('../assets/images/user-solid.svg');
@@ -360,6 +401,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
+        right: 0;
+        top: 0;
+        margin: 20px 10px;
         
     }
     .loginbttn{
@@ -395,6 +439,263 @@
         color: #2c3246;
         background-color: #9195a0;
     }
-    
+    .responsiveicons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #2c3246;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        margin-top: 20px;
+        
+    }
+    .responsiveicon{
+        color: #2c3246;
+    }
 }
+
+@media only screen and (max-width:375px){
+    .nav{
+        position: relative;
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .logoname{
+        font-size: 17px;
+        margin-left: 10px;
+    
+    }
+    .logolink{
+        text-decoration: none;
+        color: #2c3246;
+    }
+    .logo254{
+        color: #5098e9;
+    }
+    
+    .menuitems{
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+    .navitems{
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        display: none;
+    }  
+    .navitems:hover{
+        text-decoration: underline;
+        text-decoration-color: #5098e9;
+        text-decoration-thickness: 5px;
+    }
+    .logoutbtn{
+        background-color: #5098e9;
+        font-size: 18px;
+        width: 90px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        display: none;
+    
+    }
+    .profileicon{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url('../assets/images/user-solid.svg');
+        background-position: center;
+        background-color: #5098e9;
+        border: none;
+        outline: none;
+        right: 0;
+        top: 0;
+        margin: 20px 10px;
+        
+    }
+    .loginbttn{
+        font-size: 18px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: 1px #5098e9 solid;
+        margin-bottom: 5px;
+        color: #5098e9;
+        background-color: white;
+        height: 40px;
+        display: none;
+    }
+    .loginbttn:hover{
+        border: 2.5px #5098e9 solid;
+    }
+    .joinbttn{
+        font-size: 18px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 5px;
+        color: #9195a0;
+        height: 40px;
+        border: none;
+        background-color: white;
+        display: none;
+    }
+    .joinbttn:hover{
+        color: #2c3246;
+        background-color: #9195a0;
+    }
+    .responsiveicons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #2c3246;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        margin-top: 20px;
+        
+    }
+    .responsiveicon{
+        color: #2c3246;
+    }
+}
+
+
+@media only screen and (max-width:320px){
+    .nav{
+        position: relative;
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .logoname{
+        font-size: 15px;
+        margin-left: 10px;
+    
+    }
+    .logolink{
+        text-decoration: none;
+        color: #2c3246;
+    }
+    .logo254{
+        color: #5098e9;
+    }
+    
+    .menuitems{
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+    .navitems{
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        display: none;
+    }  
+    .navitems:hover{
+        text-decoration: underline;
+        text-decoration-color: #5098e9;
+        text-decoration-thickness: 5px;
+    }
+    .logoutbtn{
+        background-color: #5098e9;
+        font-size: 18px;
+        width: 90px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        display: none;
+    
+    }
+    .profileicon{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url('../assets/images/user-solid.svg');
+        background-position: center;
+        background-color: #5098e9;
+        border: none;
+        outline: none;
+        right: 0;
+        top: 0;
+        margin: 20px 5px;
+        
+    }
+    .loginbttn{
+        font-size: 18px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        border: 1px #5098e9 solid;
+        margin-bottom: 5px;
+        color: #5098e9;
+        background-color: white;
+        height: 40px;
+        display: none;
+    }
+    .loginbttn:hover{
+        border: 2.5px #5098e9 solid;
+    }
+    .joinbttn{
+        font-size: 18px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 5px;
+        color: #9195a0;
+        height: 40px;
+        border: none;
+        background-color: white;
+        display: none;
+    }
+    .joinbttn:hover{
+        color: #2c3246;
+        background-color: #9195a0;
+    }
+    .responsiveicons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #2c3246;
+        top: 0;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 20px;
+        
+    }
+    .responsiveicon{
+        color: #2c3246;
+    }
+}
+
+
 
