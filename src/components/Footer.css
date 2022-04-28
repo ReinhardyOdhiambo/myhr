@@ -17,7 +17,7 @@
     }
     .footerlinks{
         display: flex;
-        gap: 100px;
+        gap: 120px;
         margin-top: -30px;
     }
     .footermenu,.footercontacts{
@@ -38,7 +38,7 @@
     }
     .footersocials{
         display: flex;
-        gap: 20px;
+        gap: 35px;
         margin-bottom: 10px;
     }
     .footersocial{
