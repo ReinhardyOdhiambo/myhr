@@ -179,7 +179,6 @@ const Createjob = () => {
                   <input
                     className="applyforminput"
                     value={externalAddress}
-                    required
                     type="url"
                     name="urlsite"
                     id="urlsite"
