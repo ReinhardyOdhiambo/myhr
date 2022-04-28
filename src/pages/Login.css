@@ -214,13 +214,14 @@ margin-top: 100px;
         width: 50%;
         background-color: white;
         height: 50px; 
-        align-self: flex-start;
+        align-self: center;
         border-radius: 50px;
         border: none;
         font-size: 20px;
         cursor: pointer;
         margin-bottom: 10px;
         display: none;
+        
     }
     .findjob:hover{
         border: #5098e9 3px solid;

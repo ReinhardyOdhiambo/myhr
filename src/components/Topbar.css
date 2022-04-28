@@ -168,22 +168,28 @@
         
     }
     .loginbttn{
+        position: absolute;
         font-size: 18px;
-        width: 100px;
+        width: 70px;
         cursor: pointer;
-        border-radius: 20px;
+        border-radius: 5px;
         outline: none;
         border: 1px #5098e9 solid;
         margin-bottom: 5px;
         color: #5098e9;
         background-color: white;
-        height: 40px;
-        display: none;
+        margin-top: 20px;
+        margin-right: 15px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        
     }
     .loginbttn:hover{
-        border: 2.5px #5098e9 solid;
+        border:none;
     }
     .joinbttn{
+        position: absolute;
         font-size: 18px;
         width: 100px;
         cursor: pointer;
@@ -194,12 +200,17 @@
         height: 40px;
         border: none;
         background-color: white;
-        display: none;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        margin-right: 110px;
+        
     }
     .joinbttn:hover{
         color: #2c3246;
         background-color: #9195a0;
     }
+    
 
     .responsiveicons{
         position: absolute;
@@ -269,7 +280,7 @@
         border-radius: 20px;
         outline: none;
         border: none;
-        display: none;
+        
     
     }
     .profileicon{
@@ -281,28 +292,34 @@
         background-position: center;
         background-color: #5098e9;
         border: none;
-        outline: none;
+        
         
     }
     .loginbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 50px;
         cursor: pointer;
-        border-radius: 20px;
+        border-radius: 5px;
         outline: none;
         border: 1px #5098e9 solid;
         margin-bottom: 5px;
         color: #5098e9;
         background-color: white;
-        height: 40px;
-        display: none;
+        margin-top: 20px;
+        margin-right: 5px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        
     }
     .loginbttn:hover{
-        border: 2.5px #5098e9 solid;
+        border:none;
     }
     .joinbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 80px;
         cursor: pointer;
         border-radius: 20px;
         outline: none;
@@ -311,7 +328,11 @@
         height: 40px;
         border: none;
         background-color: white;
-        display: none;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        
     }
     .joinbttn:hover{
         color: #2c3246;
@@ -407,24 +428,30 @@
         
     }
     .loginbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 50px;
         cursor: pointer;
-        border-radius: 20px;
+        border-radius: 5px;
         outline: none;
         border: 1px #5098e9 solid;
         margin-bottom: 5px;
         color: #5098e9;
         background-color: white;
-        height: 40px;
-        display: none;
+        margin-top: 20px;
+        margin-right: 5px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        
     }
     .loginbttn:hover{
-        border: 2.5px #5098e9 solid;
+        border:none;
     }
     .joinbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 80px;
         cursor: pointer;
         border-radius: 20px;
         outline: none;
@@ -433,7 +460,11 @@
         height: 40px;
         border: none;
         background-color: white;
-        display: none;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        
     }
     .joinbttn:hover{
         color: #2c3246;
@@ -527,24 +558,30 @@
         
     }
     .loginbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 50px;
         cursor: pointer;
-        border-radius: 20px;
+        border-radius: 5px;
         outline: none;
         border: 1px #5098e9 solid;
         margin-bottom: 5px;
         color: #5098e9;
         background-color: white;
-        height: 40px;
-        display: none;
+        margin-top: 20px;
+        margin-right: 5px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        
     }
     .loginbttn:hover{
-        border: 2.5px #5098e9 solid;
+        border:none;
     }
     .joinbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 16px;
+        width: 80px;
         cursor: pointer;
         border-radius: 20px;
         outline: none;
@@ -553,11 +590,15 @@
         height: 40px;
         border: none;
         background-color: white;
-        display: none;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        
     }
     .joinbttn:hover{
         color: #2c3246;
-        background-color: #9195a0;
+        background-color:none;
     }
     .responsiveicons{
         position: absolute;
@@ -648,24 +689,30 @@
         
     }
     .loginbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 12px;
+        width: 50px;
         cursor: pointer;
-        border-radius: 20px;
+        border-radius: 5px;
         outline: none;
         border: 1px #5098e9 solid;
         margin-bottom: 5px;
         color: #5098e9;
         background-color: white;
-        height: 40px;
-        display: none;
+        margin-top: 20px;
+        margin-right: 5px;
+        height: 20px;
+        top: 0;
+        right: 0;
+        
     }
     .loginbttn:hover{
         border: 2.5px #5098e9 solid;
     }
     .joinbttn{
-        font-size: 18px;
-        width: 100px;
+        position: absolute;
+        font-size: 12px;
+        width: 70px;
         cursor: pointer;
         border-radius: 20px;
         outline: none;
@@ -674,7 +721,11 @@
         height: 40px;
         border: none;
         background-color: white;
-        display: none;
+        margin-top: 10px;
+        top: 0;
+        right: 0;
+        margin-right: 60px;
+        
     }
     .joinbttn:hover{
         color: #2c3246;
