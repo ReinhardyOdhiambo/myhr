@@ -32,11 +32,11 @@ const Applications = () => {
     };
     getJobs();
   }, []);
-  console.log(joblist);
+  
 
   return (
     <div>
-         <Sidenav/>
+        
       <div className="applications">
      
       <h3> Applicants Documents </h3>
