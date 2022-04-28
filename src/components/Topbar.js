@@ -33,10 +33,10 @@ const Topbar = () => {
             <Link to='/myjobs' className='navitems'> My Jobs</Link>
             <Link to='/' className='navitems'>Saved</Link>
             <div className='responsiveicons'>
-              <Link to='/jobs'><Work fontSize='small' className='responsiveicon'/> </Link>
-              <Link to='/myjobs'><CorporateFare fontSize='small' className='responsiveicon'/></Link>
-              <Link to='/createjob'><AddBox fontSize='small'  className='responsiveicon'/></Link>
-              <Link to='/'><Bookmark fontSize='small'  className='responsiveicon'/></Link>
+              <Link to='/jobs'><Work  className='responsiveicon'/> </Link>
+              <Link to='/myjobs'><CorporateFare  className='responsiveicon'/></Link>
+              <Link to='/createjob'><AddBox   className='responsiveicon'/></Link>
+              <Link to='/'><Bookmark   className='responsiveicon'/></Link>
             </div>
             <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt=''/></Link> 
             
