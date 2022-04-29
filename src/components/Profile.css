@@ -39,6 +39,16 @@
     margin-left: 5%;
     border: 5px solid antiquewhite;
 }
+.profileimg{
+    width: 95px;
+height: 95px;
+border: 3px solid antiquewhite;
+border-radius: 50px;
+background-color:#5098e9;
+background-image: url('../assets/images/user-solid.svg');
+background-position: center;
+align-items: center;
+}
 .profiledetails{
     position: absolute;
     margin-top:290px;
@@ -268,6 +278,16 @@ cursor: pointer;
         
         margin-top:42% ;
         margin-left: 10%;
+    }
+    .profileimg{
+        width: 50px;
+height: 50px;
+border: 3px solid antiquewhite;
+border-radius: 50px;
+background-color:#5098e9;
+background-image: url('../assets/images/user-solid.svg');
+background-position: center;
+align-items: center;
     }
     .profiledetails{
         position: absolute;
@@ -512,6 +532,16 @@ cursor: pointer;
         margin-top:50% ;
         margin-left: 40%;
     }
+    .profileimg{
+        width: 50px;
+height: 50px;
+border: 3px solid antiquewhite;
+border-radius: 50px;
+background-color:#5098e9;
+background-image: url('../assets/images/user-solid.svg');
+background-position: center;
+align-items: center;
+    }
     .profiledetails{
         position: absolute;
         margin-top:67%;
@@ -754,6 +784,16 @@ cursor: pointer;
             
             margin-top:60% ;
             margin-left: 40%;
+        }
+        .profileimg{
+            width: 50px;
+    height: 50px;
+    border: 3px solid antiquewhite;
+    border-radius: 50px;
+    background-color:#5098e9;
+    background-image: url('../assets/images/user-solid.svg');
+    background-position: center;
+    align-items: center;
         }
         .profiledetails{
             position: absolute;
@@ -999,6 +1039,16 @@ cursor: pointer;
             margin-top:65% ;
             margin-left: 40%;
         }
+        .profileimg{
+            width: 50px;
+    height: 50px;
+    border: 3px solid antiquewhite;
+    border-radius: 50px;
+    background-color:#5098e9;
+    background-image: url('../assets/images/user-solid.svg');
+    background-position: center;
+    align-items: center;
+        }
         .profiledetails{
             position: absolute;
             margin-top:80%;
@@ -1243,6 +1293,17 @@ cursor: pointer;
     
     margin-top:75% ;
     margin-left: 40%;
+}
+.profileimg{
+    width: 50px;
+    height: 50px;
+    border: 3px solid antiquewhite;
+    border-radius: 50px;
+    background-color:#5098e9;
+    background-image: url('../assets/images/user-solid.svg');
+    background-position: center;
+    align-items: center;
+
 }
 .profiledetails{
     position: absolute;
