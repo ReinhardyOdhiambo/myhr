@@ -64,3 +64,10 @@
     }
 
 }
+@media  only screen and (max-width:320px){
+    .footer{
+        margin-top: 250px;
+        background-color: white;
+    }
+}
+
