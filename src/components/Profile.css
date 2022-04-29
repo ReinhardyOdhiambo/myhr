@@ -282,7 +282,7 @@ cursor: pointer;
     .profileimg{
         width: 52px;
 height: 52px;
-border-radius: 52px;
+border-radius: 50px;
 background-color:#5098e9;
 background-image: url('../assets/images/user-solid.svg');
 background-position: center;
