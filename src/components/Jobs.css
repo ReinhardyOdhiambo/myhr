@@ -2,6 +2,8 @@
   position: relative;
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .joblistings {
@@ -14,6 +16,7 @@
   margin: auto;
   border: 1px #9195a0 solid;
   border-radius: 10px;
+  margin-top: 10px;
 }
 .jobcarddetails {
   margin-top: -15px;
@@ -113,6 +116,45 @@
   font-weight: 500;
   font-size: 15px;
 }
+.searchbox{
+  margin-top: -10px;
+  background-color: #9195a0;
+  height: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  align-items: center;
+  width: 22%;
+  align-items: center;
+  display: flex;
+
+}
+.searchinput{
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  line-height: 20px;
+  font-size: 16px;
+}
+.searchicon{
+  color: #9195a0;
+  float: right;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+
+  
+}
+.searchbox:hover>.searchicon{
+  color: #5098e9;
+}
 
 @media screen and (max-width: 600px) {
   .jobarea {
@@ -206,6 +248,52 @@
     font-weight: 400;
     font-size: 10px;
   }
+
+.searchbox{
+  position: relative;
+  margin-top: -20px;
+  background-color: #9195a0;
+  height: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  align-items: center;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  margin-bottom:5px;
+
+}
+.searchinput{
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  line-height: 20px;
+  font-size: 16px;
+}
+.searchicon{
+  position: absolute;
+  color: #9195a0;
+  float: right;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+  right: 0;
+  margin-right: 5px;
+
+  
+}
+.searchbox:hover>.searchicon{
+  color: #5098e9;
+}
+
 }
 @media screen and (max-width: 480px) {
   .jobarea {
@@ -299,6 +387,51 @@
     font-weight: 400;
     font-size: 10px;
   }
+
+.searchbox{
+  position: relative;
+  margin-top: -20px;
+  background-color: #9195a0;
+  height: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  align-items: center;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  margin-bottom:5px;
+
+}
+.searchinput{
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  line-height: 20px;
+  font-size: 16px;
+}
+.searchicon{
+  position: absolute;
+  color: #9195a0;
+  float: right;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+  right: 0;
+  margin-right: 5px;
+
+  
+}
+.searchbox:hover>.searchicon{
+  color: #5098e9;
+}
 }
 @media screen and (max-width: 412px) {
   .jobarea {

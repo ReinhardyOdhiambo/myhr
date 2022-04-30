@@ -4,7 +4,7 @@ import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import WorkIcon from "@mui/icons-material/Work";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { CalendarMonth, Delete, NoteAdd } from "@mui/icons-material";
+import { CalendarMonth, Delete, NoteAdd, Search } from "@mui/icons-material";
 import { doc, getDocs, collection, deleteDoc } from "firebase/firestore";
 import { db } from "../Firebase";
 import Jobdetails from "./Jobdetails";
@@ -19,6 +19,7 @@ const Myjobs = () => {
   const { user } = useUserAuth();
   let navigate = useNavigate();
   const [joblist, setJobList] = useState([]);
+  const[search,setSearch]=useState('');
 
   const jobsCollectionRef = collection(db, "jobs");
   const deleteJob = async (id) => {
@@ -37,12 +38,28 @@ const Myjobs = () => {
     };
     getJobs();
   }, [deleteJob]);
+  const handleSearch =(e)=>{
+    e.preventDefault();
+    setJobList(
+      joblist.filter(
+        (job)=>
+        job.jobtitle.toLowerCase().includes(search.toLowerCase())
+        )
+        );
+
+  };
 
   return (
     <div className="jobarea">
       <Sidenav />
       <Recomendedjobs deletejob={deleteJob} />
       <Minfooter />
+      <form className="searchbox" onSubmit={handleSearch}>
+        <input className="searchinput" type="text" placeholder="Search by Job title..." 
+        onChange={(e)=>setSearch(e.target.value)}
+        />
+        <button type="submit" className="searchicon"><Search  /></button>
+      </form>
 
       <div className="joblistings">
         {joblist &&

@@ -4,7 +4,7 @@ import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 import WorkIcon from "@mui/icons-material/Work";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { CalendarMonth } from "@mui/icons-material";
+import { CalendarMonth, Search } from "@mui/icons-material";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "../Firebase";
 import Jobdetails from "./Jobdetails";
@@ -18,6 +18,9 @@ const Jobs = () => {
   const { user } = useUserAuth();
   let navigate = useNavigate();
   const [joblist, setJobList] = useState([]);
+  const[search,setSearch]=useState('');
+  const[filterjob,setFilterJob]=useState([]);
+
 
   const jobsCollectionRef = collection(db, "jobs");
 
@@ -32,7 +35,24 @@ const Jobs = () => {
       );
     };
     getJobs();
-  }, []);
+  }, [search]);
+  
+ 
+      const handleSearch =(e)=>{
+        e.preventDefault();
+        setJobList(
+          joblist.filter(
+            (job)=>
+            job.jobtitle.toLowerCase().includes(search.toLowerCase())
+            )
+            );
+  
+      };
+    
+    
+        
+ 
+  
 
   return (
     <div className="jobarea">
@@ -40,6 +60,12 @@ const Jobs = () => {
       <Recomendedjobs />
       <Minfooter />
 
+      <form className="searchbox" onSubmit={handleSearch}>
+        <input className="searchinput" type="text" placeholder="Search by Job title..." 
+        onChange={(e)=>setSearch(e.target.value)}
+        />
+        <button type="submit" className="searchicon"><Search  /></button>
+      </form>
       <div className="joblistings">
         {joblist.map((job) => (
           <Link key={job.id} to={`/details/${job.id}`}>
