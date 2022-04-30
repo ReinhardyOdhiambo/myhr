@@ -10,9 +10,11 @@ import { getDoc, collection, doc } from "firebase/firestore";
 import { db } from "../Firebase";
 import Jobs from "./Jobs";
 import Applyform from "./Applyform";
+import { useUserAuth } from "../context/UserAuthContext";
 
 const Jobdetails = () => {
   const { id } = useParams();
+  const {user}=useUserAuth();
 
   const [job, setJobList] = useState([]);
   useEffect(() => {
@@ -66,9 +68,12 @@ const Jobdetails = () => {
             </Link>
           )}
 
-          <button className="savebttn">
+          {
+            user &&
+            <button className="savebttn">
             <SaveAlt fontSize="small" /> Save
           </button>
+          }
         </div>
         <div className="descresqua">
           <div className="jobdesc">

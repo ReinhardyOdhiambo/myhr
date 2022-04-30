@@ -31,10 +31,10 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/' element={<ProtectedRoutes><Homepage/></ProtectedRoutes>}/>
       <Route path='/jobs' element={<Jobs/>}/>
+      <Route path='/details/:id' element={<Jobdetails/>}/>
       <Route path='/resetpassword' element={<Resetpass/>}/>
       <Route path='/profile' element={<ProtectedRoutes><Profile/></ProtectedRoutes>}/>
       <Route path='/createjob' element={<ProtectedRoutes><Createjob/></ProtectedRoutes>}/>
-      <Route path='/details/:id' element={<ProtectedRoutes><Jobdetails/></ProtectedRoutes>}/>
       <Route path='/apply/:id' element={<ProtectedRoutes><Applyform/></ProtectedRoutes>}/>
       <Route path='/myjobs' element={<ProtectedRoutes><Myjobs/></ProtectedRoutes>}/>
       <Route path='/applications/:id' element={<ProtectedRoutes><Applications/></ProtectedRoutes>}/>
