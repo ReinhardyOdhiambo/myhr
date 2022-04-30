@@ -57,12 +57,13 @@ const Jobdetails = () => {
           </h3>
         </div>
         <div className="applysave">
-          {job.sendEmail ? (
+          {job.externalAddress? (
+            
+            <Link to={job.externalAddress}><button className="applybttn">External</button></Link>
+          ) : (
             <Link to={`/apply/${id}`}>
               <button className="applybttn">Apply</button>
             </Link>
-          ) : (
-            <button className="applybttn">External</button>
           )}
 
           <button className="savebttn">
