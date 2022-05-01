@@ -8,18 +8,27 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+
     }
     .footerarea{
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .footerlogotitle{
+        margin: 10px  50%;
     }
     .footerlinks{
         display: flex;
-        gap: 120px;
-        margin-top: -30px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:20px;
+        gap: 10px;
     }
+    
     .footermenu,.footercontacts{
         align-items: flex-start;
         display: flex;
@@ -39,7 +48,8 @@
     .footersocials{
         display: flex;
         gap: 35px;
-        margin-bottom: 10px;
+        margin:  0 auto 10px;
+        
     }
     .footersocial{
         color: black;
@@ -57,16 +67,12 @@
     }
 }
 @media  only screen and (max-width:480px), (max-width:412px),(max-width:375px),(max-width:320px){
-    .footerlinks{
-        display: flex;
-        gap: 50px;
-        margin-top: -30px;
-    }
+    
 
 }
 @media  only screen and (max-width:320px){
     .footer{
-        margin-top: 250px;
+       
         background-color: white;
     }
 }

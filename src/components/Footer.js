@@ -24,11 +24,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerarea">
-        <div className="footerlogoarea">
-          <h3>
-            Connection<span className="logospan">.254</span>
-          </h3>
-        </div>
+        
         <div className="footerlinks">
           <div className="footermenu">
             <h3>Quick Links</h3>
@@ -48,6 +44,12 @@ const Footer = () => {
         </div>
       </div>
       {user && <button onClick={handleLogout} className="footerlogout">Logout</button>}
+      <div className="footerlogotitle">
+          <h3 className="">
+            Connection<span className="logospan">.254</span>
+          </h3>
+        </div>
+      
       <div className="footersocials">
         <Link to="">
           <Facebook className="footersocial" />
@@ -65,6 +67,7 @@ const Footer = () => {
           <GitHub className="footersocial" />
         </Link>
       </div>
+      
     </div>
   );
 };

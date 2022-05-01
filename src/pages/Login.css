@@ -6,11 +6,15 @@
     background-position:top ;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    overflow:auto;
+
+    
     
     
 }
 .login-signup{
     margin-top: 50px;
+    margin-bottom: 20px;
     width: 400px;
     background-color: white;
     border-radius: 10px;
@@ -172,7 +176,7 @@ margin-top: 100px;
         
     }
     .login-signup{
-        margin: 0px 0px 0px 50px;
+        margin: 0px 0px 30px 50px;
         width: 80%;
         background-color: white;
         border-radius: 10px;
