@@ -17,7 +17,7 @@ const Signin = () => {
       await signUp(signEmail, signPass)
       .then(()=>navigate('/'))
       .catch(error=>{
-        alert(error.message);
+        alert(error.message.slice(9,60));
       })
     } catch (error) {
     

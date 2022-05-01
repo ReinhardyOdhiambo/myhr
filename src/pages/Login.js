@@ -23,7 +23,7 @@ const Login = () => {
       await logIn(loginEmail, loginPass)
       .then(()=>navigate("/"))
       .catch(error => {   
-        alert(error.message);
+        alert(error.message.slice(9,60));
      })
     } catch (error) {
     }

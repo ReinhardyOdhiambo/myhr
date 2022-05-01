@@ -1,6 +1,9 @@
 .footer{
     display: none;
     background-color: white;
+    position: absolute;
+    bottom: 0;
+
 }
 @media  only screen and (max-width:600px) {
     .footer{
@@ -53,6 +56,15 @@
     }
     .footersocial{
         color: black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #5098e9;
+        display: flex;
+        align-items: center;
+
+
     }
     .footerlogout{
         width: 100px;
