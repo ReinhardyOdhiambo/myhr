@@ -106,12 +106,14 @@ const Profile = () => {
   
   return (
     <div className="profilepage">
-      <div key={user.id} className="profile">
-      {
+      <div  className="profile">
+    
+      
+        <div  key={user.id} className="profilebanner">
+        {
     users.map((users)=>(
       <>
-      
-        <div className="profilebanner">
+
           <div className="banner">
             <div className="profilecircle">
               <img
@@ -144,12 +146,18 @@ const Profile = () => {
             </button>
           </Link>
           <img className="bannerimg" src={prflebg} alt="" />
+          </>
+    ))
+}
+          
+        </div>
+ 
         </div>
         
       
-      </>
-    ))
-  }
+      
+    
+  
         
         <div className="experience">
           <h3> Experience</h3>
