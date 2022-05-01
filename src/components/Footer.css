@@ -1,8 +1,7 @@
 .footer{
     display: none;
     background-color: white;
-    position: absolute;
-    bottom: 0;
+   
 
 }
 @media  only screen and (max-width:600px) {
@@ -22,7 +21,7 @@
         width: 100%;
     }
     .footerlogotitle{
-        margin:  10px auto 10px;
+        margin:  10px auto 5px;
     }
     .footerlinks{
         display: flex;
@@ -76,7 +75,7 @@
         
         font-size: medium;
         cursor: pointer;
-        margin:  0 auto 20px;
+        margin:  0 auto 10px;
     }
 }
 @media  only screen and (max-width:480px), (max-width:412px),(max-width:375px),(max-width:320px){
