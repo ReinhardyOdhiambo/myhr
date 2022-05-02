@@ -97,111 +97,60 @@ const Profile = () => {
   return (
     <div className="profilepage">
       <div className="profile">
-      {users.map((users) => (
-          
-            <>
-              { users.userid === user.uid ?
-                (
-                  <div key={user.id} className="profilebanner">
+        <div key={user.id} className="profilebanner">
+          <div className="banner">
+            <div className="profilecircle">
+              <img
+                className="profileimg"
+                src={user.photoURL ? user.photoURL : null}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="profiledetails">
+            {users.map((users) => (
+              <>
+              { users.userid === user.uid &&
+              (
 
-              <div className="banner">
-                <div className="profilecircle">
-                  <img
-                    className="profileimg"
-                    src={user.photoURL ? user.photoURL : null}
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="profiledetails">
-                <h3 className="profilename">
-                  {" "}
-                  { users.name}{" "}
-                </h3>
-                <h3 className="profiletitle">
-                  {" "}
-                  { users.title}{" "}
-                </h3>
-                <a
-                  href={ user.email}
-                  className="profileemail"
-                >
-                  <Email fontSize="small" />
-                  {user.email}{" "}
-                </a>
-                <a href="tel:+254743713416" className="profilephone">
-                  <Phone fontSize="small" />{" "}
-                  {  users.tel}
-                </a>
-                <h3 className="profilelocation">
-                  <LocationCityOutlined fontSize="small" />{" "}
-                  { users.location}
-                </h3>
-              </div>
-              <div className="profileediticon" onClick={setEditProfile}>
-                <Edit />
-              </div>
-              <Link to="/createjob">
-                <button className="pcreatejobbtn">
-                  <NoteAdd className="addjobicon" /> Post a Job
-                </button>
-              </Link>
-              <img className="bannerimg" src={prflebg} alt="" />
-              </div>
-                ):
-                <div key={user.id} className="profilebanner">
-
-                <div className="banner">
-                  <div className="profilecircle">
-                    <img
-                      className="profileimg"
-                      src={user.photoURL ? user.photoURL : null}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="profiledetails">
-                  <h3 className="profilename">
-                    {" "}
-                   
-                  </h3>
-                  <h3 className="profiletitle">
-                    {" "}
-                    
-                  </h3>
-                  <a
-                    href={ user.email}
-                    className="profileemail"
-                  >
-                    <Email fontSize="small" />
-                    {user.email}{" "}
-                  </a>
-                  <a href="tel:+254743713416" className="profilephone">
-                    <Phone fontSize="small" />{" "}
-                    
-                  </a>
-                  <h3 className="profilelocation">
-                    <LocationCityOutlined fontSize="small" />{" "}
-                   
-                  </h3>
-                </div>
-                <div className="profileediticon" onClick={setEditProfile}>
-                  <Edit />
-                </div>
-                <Link to="/createjob">
-                  <button className="pcreatejobbtn">
-                    <NoteAdd className="addjobicon" /> Post a Job
-                  </button>
-                </Link>
-                <img className="bannerimg" src={prflebg} alt="" />
-                </div>
+                <>
+                <h3 className="profilename"> {users.name} </h3>
                 
-              }
+                
+                <h3 className="profiletitle"> {users.title} </h3>
+              
+              <a href={user.email} className="profileemail">
+                <Email fontSize="small" />
+                {user.email}{" "}
+              </a>
+            
+                <a href="tel:+254743713416" className="profilephone">
+                  <Phone fontSize="small" /> {users.tel}
+                </a>
+              
+             
+                <h3 className="profilelocation">
+                  <LocationCityOutlined fontSize="small" /> {users.location}
+                </h3>
+                </>
+                
+                  
+              
+              )}
 
-            </>
-          
-        
-        ))}
+              </>
+            ))}
+          </div>
+          <div className="profileediticon" onClick={setEditProfile}>
+            <Edit />
+          </div>
+          <Link to="/createjob">
+            <button className="pcreatejobbtn">
+              <NoteAdd className="addjobicon" /> Post a Job
+            </button>
+          </Link>
+          <img className="bannerimg" src={prflebg} alt="" />
+        </div>
       </div>
 
       <div className="experience">
