@@ -108,7 +108,7 @@ const Profile = () => {
                 <div className="profilecircle">
                   <img
                     className="profileimg"
-                    src={user.photoURL ? user.photoURL : null}
+                    src={users.userid === user.uid && user.photoURL}
                     alt=""
                   />
                 </div>
@@ -123,7 +123,7 @@ const Profile = () => {
                   { users.title}{" "}
                 </h3>
                 <a
-                  href={ user.email}
+                  href={ users.userid === user.uid && user.email}
                   className="profileemail"
                 >
                   <Email fontSize="small" />
