@@ -100,7 +100,7 @@ const Profile = () => {
       {users.map((users) => (
           
             <>
-              { users.userid === user.uid &&
+              { 
                 (
                   <div key={user.id} className="profilebanner">
 
@@ -116,7 +116,7 @@ const Profile = () => {
               <div className="profiledetails">
                 <h3 className="profilename">
                   {" "}
-                  { users.name}{" "}
+                  { users.userid === user.uid && users.name}{" "}
                 </h3>
                 <h3 className="profiletitle">
                   {" "}
@@ -131,11 +131,11 @@ const Profile = () => {
                 </a>
                 <a href="tel:+254743713416" className="profilephone">
                   <Phone fontSize="small" />{" "}
-                  {  users.tel}
+                  {users.userid === user.uid &&  users.tel}
                 </a>
                 <h3 className="profilelocation">
                   <LocationCityOutlined fontSize="small" />{" "}
-                  { users.location}
+                  { users.userid === user.uid && users.location}
                 </h3>
               </div>
               <div className="profileediticon" onClick={setEditProfile}>
