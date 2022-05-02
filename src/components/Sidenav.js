@@ -32,42 +32,55 @@ const Sidenav = () => {
   return (
     <div className='sidenav'>
       <Link className="profilelinkhome" to='/profile'>
-      {
-    users.map((users)=>(
-      <>
-      
-        <div className="profilebanner">
-          <div className="banner">
-            <div className="profilecircle">
-              <img
-                className="profileimg"
-                src={user.photoURL ? user.photoURL : null}
-                alt=""
-              />
+      {users.map((users) => (
+          
+          <>
+            { users.userid === user.uid &&
+              (
+                <div key={user.id} className="profilebanner">
+
+            <div className="banner">
+              <div className="profilecircle">
+                <img
+                  className="profileimg"
+                  src={user.photoURL ? user.photoURL : null}
+                  alt=""
+                />
+              </div>
             </div>
-          </div>
-          <div className="profiledetails">
-            <h3 className="profilename"> {users.userid===user.uid &&users.name} </h3>
-            <h3 className="profiletitle"> {users.userid===user.uid &&users.title} </h3>
-            <a href={users.userid===user.uid &&user.email} className="profileemail">
-              <Email fontSize="small" />
-              {user.email}{" "}
-            </a>
-            <a href="tel:+254743713416" className="profilephone">
-              <Phone fontSize="small" /> {users.userid===user.uid &&users.tel}
-            </a>
-            <h3 className="profilelocation">
-              <LocationCityOutlined fontSize="small" /> {users.userid===user.uid &&users.location}
-            </h3>
-          </div>
-          <img className="bannerimg" src={prflebg} alt="" />
-         
-        </div>
+            <div className="profiledetails">
+              <h3 className="profilename">
+                {" "}
+                { users.name}{" "}
+              </h3>
+              <h3 className="profiletitle">
+                {" "}
+                { users.title}{" "}
+              </h3>
+              <a
+                href={ user.email}
+                className="profileemail"
+              >
+                <Email fontSize="small" />
+                {user.email}{" "}
+              </a>
+              <a href="tel:+254743713416" className="profilephone">
+                <Phone fontSize="small" />{" "}
+                {  users.tel}
+              </a>
+              <h3 className="profilelocation">
+                <LocationCityOutlined fontSize="small" />{" "}
+                { users.location}
+              </h3>
+            </div>
+            <img className="bannerimg" src={prflebg} alt="" />
+            </div>
+              )
+            }
+          </>
         
       
-      </>
-    ))
-  }
+      ))}
       </Link>
       <Link to='/createjob'>
   <button className="createjobbtn"><NoteAdd className="addjobicon"/> Post a Job</button>

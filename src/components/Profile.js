@@ -97,9 +97,13 @@ const Profile = () => {
   return (
     <div className="profilepage">
       <div className="profile">
-        <div key={user.id} className="profilebanner">
-          {users.map((users) => (
+      {users.map((users) => (
+          
             <>
+              { users.userid === user.uid &&
+                (
+                  <div key={user.id} className="profilebanner">
+
               <div className="banner">
                 <div className="profilecircle">
                   <img
@@ -112,14 +116,14 @@ const Profile = () => {
               <div className="profiledetails">
                 <h3 className="profilename">
                   {" "}
-                  {users.userid === user.uid && users.name}{" "}
+                  { users.name}{" "}
                 </h3>
                 <h3 className="profiletitle">
                   {" "}
-                  {users.userid === user.uid && users.title}{" "}
+                  { users.title}{" "}
                 </h3>
                 <a
-                  href={users.userid === user.uid && user.email}
+                  href={ user.email}
                   className="profileemail"
                 >
                   <Email fontSize="small" />
@@ -127,11 +131,11 @@ const Profile = () => {
                 </a>
                 <a href="tel:+254743713416" className="profilephone">
                   <Phone fontSize="small" />{" "}
-                  {users.userid === user.uid && users.tel}
+                  {  users.tel}
                 </a>
                 <h3 className="profilelocation">
                   <LocationCityOutlined fontSize="small" />{" "}
-                  {users.userid === user.uid && users.location}
+                  { users.location}
                 </h3>
               </div>
               <div className="profileediticon" onClick={setEditProfile}>
@@ -143,9 +147,13 @@ const Profile = () => {
                 </button>
               </Link>
               <img className="bannerimg" src={prflebg} alt="" />
+              </div>
+                )
+              }
             </>
-          ))}
-        </div>
+          
+        
+        ))}
       </div>
 
       <div className="experience">

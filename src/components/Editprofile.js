@@ -37,7 +37,6 @@ const Editprofile = ({setEditProfile}) => {
         userid:user.uid,
 
       });
-      navigate("/profile");
       setEditProfile(null);
     };  
   return (
