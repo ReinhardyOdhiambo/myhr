@@ -105,7 +105,7 @@
         width: 100%;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
         gap: 200px;
         
@@ -165,9 +165,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
-        left: 0;
+        right: 0;
         top: 0;
-        margin: 20px 15px;
+        margin: 20px 60px;
         
     }
     .loginbttn{
@@ -252,7 +252,7 @@
         text-align: left;
         margin-bottom: 10px;
         font: 18px;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-top:5px ;
         font-weight: 200;
         color: white;
@@ -268,7 +268,7 @@
         width: 100%;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
         gap: 200px;
         
@@ -398,7 +398,7 @@
         width: 100%;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
         
         
@@ -457,9 +457,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
-        left: 0;
+        right: 0;
         top: 0;
-        margin: 20px 10px;
+        margin: 20px 60px;
         
     }
     .loginbttn{
@@ -529,7 +529,7 @@
         width: 100%;
         background-color: white;
         display: flex;
-        flex-direction: column;
+       
         align-items: center;
         
         
@@ -588,9 +588,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
-        left: 0;
+        right: 0;
         top: 0;
-        margin: 20px 10px;
+        margin: 20px 60px;
         
     }
     .loginbttn{
@@ -661,7 +661,7 @@
         width: 100%;
         background-color: white;
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
         
         
@@ -720,9 +720,9 @@
         background-color: #5098e9;
         border: none;
         outline: none;
-        left: 0;
+        right: 0;
         top: 0;
-        margin: 20px 5px;
+        margin: 20px 60px;
         
     }
     .loginbttn{

@@ -15,11 +15,11 @@ const Topbar = ({setNavMenu,navMenu}) => {
       console.log(error.message);
     }
   };
-
+ 
   return (
     <div className='nav'>
         <Link  to='/' className='logolink'>
-        <div className='logoarea'>
+        <div className='logoarea' onClick={()=>{setNavMenu(false);}}>
             <h3 className='logoname'>CONNECTION<span className='logo254'>.254</span></h3>
         </div>
         </Link>
@@ -39,7 +39,7 @@ const Topbar = ({setNavMenu,navMenu}) => {
               <MenuIcon onClick={() => {setNavMenu(!navMenu); }}  className='responsiveicon' />
               </div>
             </div>
-            <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt=''/></Link> 
+            <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt='' onClick={()=>{setNavMenu(false);}}/></Link> 
             
 
             <button onClick={handleLogout} className='logoutbtn'>Logout</button>

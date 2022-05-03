@@ -20,7 +20,7 @@ import { db } from "../Firebase";
 import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import Editprofile from "./Editprofile";
 
-const Profile = () => {
+const Profile = ({closemenu}) => {
   const { user } = useUserAuth();
   let navigate = useNavigate();
   const [newexperience, setNewExperience] = useState(null);
@@ -95,7 +95,7 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="profilepage">
+    <div className="profilepage" onClick={()=>{closemenu();}}>
       <div className="profile">
         <div key={user.id} className="profilebanner">
           <div className="banner">

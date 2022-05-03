@@ -12,7 +12,7 @@ import Jobs from "./Jobs";
 import Applyform from "./Applyform";
 import { useUserAuth } from "../context/UserAuthContext";
 
-const Jobdetails = () => {
+const Jobdetails = ({closemenu}) => {
   const { id } = useParams();
   const {user}=useUserAuth();
 
@@ -30,7 +30,7 @@ const Jobdetails = () => {
   let navigate = useNavigate();
 
   return (
-    <div className="details">
+    <div className="details" onClick={()=>{closemenu();}}>
       <div className="detailscover">
         <div className="topdetails">
           <img className="jobimg" src="" alt="" />

@@ -9,7 +9,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
-const Createjob = () => {
+const Createjob = ({closemenu}) => {
   const [websiteaddress, setWebsiteAddress] = useState(false);
   const [emailaddress, setEmailAddress] = useState(false);
   const { user } = useUserAuth();
@@ -53,7 +53,7 @@ const Createjob = () => {
   };
 
   return (
-    <div className="creationarea">
+    <div className="creationarea" onClick={()=>{closemenu();}}>
       <div className="jobssformarea">
         <div className="formarea">
           <div className="createformtitle">

@@ -9,12 +9,12 @@ import Jobdetails from '../components/Jobdetails.js';
 import Sidenav from '../components/Sidenav'
 import Recomendedjobs from '../components/Recomendedjobs'
 
-const Homepage = () => {
+const Homepage = ({closemenu}) => {
  
 
   
   return (
-    <div className='homepage'>
+    <div className='homepage' onClick={()=>{closemenu();}}>
       <Jobs/>
       <Sidenav/>
       

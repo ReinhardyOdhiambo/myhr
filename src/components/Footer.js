@@ -10,13 +10,15 @@ import "./Footer.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 
-const Footer = () => {
+const Footer = ({closemenu}) => {
     let navigate=useNavigate();
     const {logOut,user}=useUserAuth();
     const handleLogout = async () => {
         try {
           await logOut();
+          closemenu();
           navigate("/login");
+
         } catch (error) {
           console.log(error.message);
         }

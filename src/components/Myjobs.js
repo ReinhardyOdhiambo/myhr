@@ -15,7 +15,7 @@ import { async } from "@firebase/util";
 import Recomendedjobs from "./Recomendedjobs";
 import Minfooter from "./Minfooter";
 
-const Myjobs = () => {
+const Myjobs = ({closemenu}) => {
   const { user } = useUserAuth();
   let navigate = useNavigate();
   const [joblist, setJobList] = useState([]);
@@ -50,7 +50,7 @@ const Myjobs = () => {
   };
 
   return (
-    <div className="jobarea">
+    <div className="jobarea" onClick={()=>{closemenu();}} >
       <Sidenav />
       <Recomendedjobs deletejob={deleteJob} />
       <Minfooter />

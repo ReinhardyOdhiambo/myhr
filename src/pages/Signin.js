@@ -4,7 +4,7 @@ import google from '../assets/images/google.png'
 import { useUserAuth } from '../context/UserAuthContext';
 import { Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
 
-const Signin = () => {
+const Signin = ({closemenu}) => {
 
   const[signEmail,setSignupEmail]=useState("");
   const[signPass,setSignupPass]=useState("");

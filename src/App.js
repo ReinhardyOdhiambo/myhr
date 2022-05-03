@@ -21,6 +21,12 @@ import Topmenubar from './components/Topmenubar';
 
 function App() {
   const[navMenu,setNavMenu]=useState(false);
+  const closemenu = (e) => {
+    
+      setNavMenu(false);
+    
+
+  };
   
 
   
@@ -31,17 +37,17 @@ function App() {
      <Topbar setNavMenu={setNavMenu} navMenu={navMenu}/>
     
     <Routes>
-      <Route path='/signup' element={<Signin/>}/>
+      <Route path='/signup' element={<Signin closemenu={closemenu}/>}/>
       <Route path='/login' element={<Login/>}/>
-      <Route path='/' element={<ProtectedRoutes><Homepage/></ProtectedRoutes>}/>
-      <Route path='/jobs' element={<Jobs/>}/>
-      <Route path='/details/:id' element={<Jobdetails/>}/>
+      <Route path='/' element={<ProtectedRoutes><Homepage closemenu={closemenu}/></ProtectedRoutes>}/>
+      <Route path='/jobs' element={<Jobs closemenu={closemenu}/>}/>
+      <Route path='/details/:id' element={<Jobdetails closemenu={closemenu}/>}/>
       <Route path='/resetpassword' element={<Resetpass/>}/>
-      <Route path='/profile' element={<ProtectedRoutes><Profile/></ProtectedRoutes>}/>
-      <Route path='/createjob' element={<ProtectedRoutes><Createjob/></ProtectedRoutes>}/>
-      <Route path='/apply/:id' element={<ProtectedRoutes><Applyform/></ProtectedRoutes>}/>
-      <Route path='/myjobs' element={<ProtectedRoutes><Myjobs/></ProtectedRoutes>}/>
-      <Route path='/applications/:id' element={<ProtectedRoutes><Applications/></ProtectedRoutes>}/>
+      <Route path='/profile' element={<ProtectedRoutes><Profile closemenu={closemenu}/></ProtectedRoutes>}/>
+      <Route path='/createjob' element={<ProtectedRoutes><Createjob closemenu={closemenu}/></ProtectedRoutes>}/>
+      <Route path='/apply/:id' element={<ProtectedRoutes><Applyform closemenu={closemenu}/></ProtectedRoutes>}/>
+      <Route path='/myjobs' element={<ProtectedRoutes><Myjobs closemenu={closemenu}/></ProtectedRoutes>}/>
+      <Route path='/applications/:id' element={<ProtectedRoutes><Applications closemenu={closemenu}/></ProtectedRoutes>}/>
     </Routes>
     <Topmenubar setNavMenu={setNavMenu} navMenu={navMenu}/>
     <Footer/>
