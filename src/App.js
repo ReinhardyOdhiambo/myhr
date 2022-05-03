@@ -16,8 +16,11 @@ import Profile from './components/Profile';
 import Createjob from './components/Createjob';
 import Resetpass from './pages/Resetpass';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import Topmenubar from './components/Topmenubar';
 
 function App() {
+  const[navMenu,setNavMenu]=useState(false);
   
 
   
@@ -25,7 +28,8 @@ function App() {
   return (
     <div className="App">
    <UserAuthContextProvider>
-     <Topbar/>
+     <Topbar setNavMenu={setNavMenu} navMenu={navMenu}/>
+    
     <Routes>
       <Route path='/signup' element={<Signin/>}/>
       <Route path='/login' element={<Login/>}/>
@@ -39,6 +43,7 @@ function App() {
       <Route path='/myjobs' element={<ProtectedRoutes><Myjobs/></ProtectedRoutes>}/>
       <Route path='/applications/:id' element={<ProtectedRoutes><Applications/></ProtectedRoutes>}/>
     </Routes>
+    <Topmenubar setNavMenu={setNavMenu} navMenu={navMenu}/>
     <Footer/>
     </UserAuthContextProvider>
     

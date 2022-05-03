@@ -3,8 +3,8 @@ import  './Topbar.css'
 import { useNavigate, Link } from 'react-router-dom';
 import { useUserAuth } from '../context/UserAuthContext';
 import { AddBox, Bookmark, CorporateFare, Save, SaveAlt, Work, WorkHistory } from '@mui/icons-material';
-
-const Topbar = () => {
+import MenuIcon from '@mui/icons-material/Menu';
+const Topbar = ({setNavMenu,navMenu}) => {
   const { logOut, user } = useUserAuth();
   const navigate = useNavigate();
   const handleLogout = async () => {
@@ -15,6 +15,7 @@ const Topbar = () => {
       console.log(error.message);
     }
   };
+
   return (
     <div className='nav'>
         <Link  to='/' className='logolink'>
@@ -33,10 +34,10 @@ const Topbar = () => {
             <Link to='/myjobs' className='navitems'> My Jobs</Link>
             <Link to='/' className='navitems'>Saved</Link>
             <div className='responsiveicons'>
-              <Link to='/jobs'><Work  className='responsiveicon'/> </Link>
-              <Link to='/myjobs'><CorporateFare  className='responsiveicon'/></Link>
-              <Link to='/createjob'><AddBox   className='responsiveicon'/></Link>
-              <Link to='/'><Bookmark   className='responsiveicon'/></Link>
+              
+              <div>
+              <MenuIcon onClick={() => {setNavMenu(!navMenu); }}  className='responsiveicon' />
+              </div>
             </div>
             <Link to= '/profile'><img  className='profileicon' src={user.photoURL} alt=''/></Link> 
             
